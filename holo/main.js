@@ -28,6 +28,7 @@ const cards = document.querySelectorAll('.card');
 const cardImgs = document.querySelectorAll('.card-img-top');
 const cardTitles = document.querySelectorAll('.card-title');
 const cardTexts = document.querySelectorAll('.card-text');
+const progress = document.querySelector('.progress-bar');
 
 let member1, member2;
 let temp = [];
@@ -57,8 +58,8 @@ function next() {
     }
     title.textContent = titleText;
   }
-
   count++;
+  progress.style.width = `${(count / 7) * 100}%`;
   if (count === 8) {
     changeSlide();
     cardImgs[2].src = temp[0].image;

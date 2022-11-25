@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+* {
+  color: white;
+  font-family: 'Jua', sans-serif;
+}
+
+.page {
+  background-color: #111;
+}
 .box {
   display: flex;
   height: 100%;
@@ -23,10 +33,34 @@ h3 {
   font-weight: bolder;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .card {
+  background-color: #333;
   cursor: pointer;
   transition: 0.1s;
+  box-shadow: 0 0 0.3rem 0.3rem #222;
+  border-radius: 0.5rem;
 }
 .card:active {
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+.card-img-top {
+  border-radius: 1rem;
+}
+.card-body {
+  background-color: #222;
+}
+
+.card-title {
+  font-weight: bolder;
+}
+.card-text {
+  font-size: 1rem;
 }
