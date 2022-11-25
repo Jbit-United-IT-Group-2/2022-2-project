@@ -1,0 +1,23 @@
+.hide {
+  display: none !important;
+}
+
+.wrap {
+  background-color: lightgray;
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  background-color: white;
+  width: 100vw;
+  max-width: 420px;
+  height: 100vh;
+  max-height: 920px;
+  border: solid 1px gray;
+  overflow: auto;
+}

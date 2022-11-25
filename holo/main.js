@@ -1,13 +1,15 @@
-const slides = document.querySelectorAll('.slide');
+import enMembers from './enMember.js';
+
+const pages = document.querySelectorAll('.page');
 
 let currentPage = 0;
 
 function changeSlide() {
   currentPage++;
-  slides.forEach((slide, i) => {
-    slide.classList.add('hide');
+  pages.forEach((page, i) => {
+    page.classList.add('hide');
     if (currentPage === i) {
-      slide.classList.remove('hide');
+      page.classList.remove('hide');
     }
   });
 }
@@ -19,48 +21,7 @@ startBtn.addEventListener('click', () => {
 });
 
 // Content page
-let members = [
-  {
-    name: 'Watson Amelia',
-    image: 'images/en/ame.png',
-    desc: '찐따 탐정 아메',
-  },
-  {
-    name: 'Takanashi Kiara',
-    image: 'images/en/kiara.png',
-    desc: '켄터키 프라이드 치킨',
-  },
-  {
-    name: 'Ninomae Inanis',
-    image: 'images/en/ina.png',
-    desc: '문너눈나',
-  },
-  {
-    name: 'Gawr Gura',
-    image: 'images/en/gura.png',
-    desc: '양덕 픽 상어',
-  },
-  {
-    name: 'Mori Calliope',
-    image: 'images/en/calli.png',
-    desc: '랩하는 칼리',
-  },
-  {
-    name: 'Ceres Fauna',
-    image: 'images/en/fauna.png',
-    desc: '대자연의 힘으로!',
-  },
-  {
-    name: 'Hakos baelz',
-    image: 'images/en/baelz.png',
-    desc: '땃쥐는 친구가 없어요',
-  },
-  {
-    name: 'Nanashi Mumei',
-    image: 'images/en/mumei.png',
-    desc: '부엉이냐 올빼미냐',
-  },
-];
+let members = [...enMembers];
 
 const title = document.querySelector('.title');
 const cards = document.querySelectorAll('.card');
