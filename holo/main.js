@@ -17,6 +17,12 @@ function changeSlide() {
 }
 
 // Title page
+const myCarouselElement = document.querySelector('#carouselExampleSlidesOnly');
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 1500,
+  wrap: true,
+});
+
 const carouselInner = document.querySelector('.carousel-inner');
 members.forEach((member, i) => {
   const carouselItem = document.createElement('div');
@@ -78,10 +84,7 @@ function next() {
   count++;
   progress.style.width = `${(count / 7) * 100}%`;
   if (count === 8) {
-    changeSlide();
-    cardImgs[2].src = temp[0].image;
-    cardTitles[2].textContent = temp[0].name;
-    cardTexts[2].textContent = temp[0].desc;
+    location.href = temp[0].result;
     return;
   }
   console.log(members);
