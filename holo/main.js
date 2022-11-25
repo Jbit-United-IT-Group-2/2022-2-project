@@ -82,8 +82,9 @@ cards[1].addEventListener('click', () => {
 });
 
 function next() {
-  if ([4, 6, 7].includes(count)) {
-    members = temp;
+  if ([4, 6].includes(count)) {
+    members = [...temp];
+    temp = [];
     let titleText;
     switch (count) {
       case 4:
@@ -95,6 +96,7 @@ function next() {
     }
     title.textContent = titleText;
   }
+
   count++;
   if (count === 8) {
     changeSlide();
@@ -103,6 +105,7 @@ function next() {
     cardTexts[2].textContent = temp[0].desc;
     return;
   }
+  console.log(members);
   member1 = members.pop();
   cardImgs[0].src = member1.image;
   cardTitles[0].textContent = member1.name;
@@ -111,8 +114,5 @@ function next() {
   cardImgs[1].src = member2.image;
   cardTitles[1].textContent = member2.name;
   cardTexts[1].textContent = member2.desc;
-
-  console.log(temp);
 }
-
 next();

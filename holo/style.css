@@ -39,7 +39,7 @@
 
 .card {
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 .card:active {
   transform: scale(1.1);
