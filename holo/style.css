@@ -8,6 +8,7 @@
 .page {
   background-color: #111;
 }
+
 .box {
   display: flex;
   height: 100%;
@@ -28,7 +29,15 @@ h3 {
   font-weight: bolder;
 }
 
+.carousel-item {
+  border-radius: 50%;
+  background-color: #222;
+  overflow: hidden;
+  box-shadow: 0 0 1rem 1rem #111 inset;
+}
+
 .start_btn {
+  z-index: 10;
   width: 8rem;
   font-weight: bolder;
 }

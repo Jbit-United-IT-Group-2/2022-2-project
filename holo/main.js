@@ -1,5 +1,7 @@
 import enMembers from './enMember.js';
 
+let members = [...enMembers].sort(() => Math.random() - 0.5);
+
 const pages = document.querySelectorAll('.page');
 
 let currentPage = 0;
@@ -15,13 +17,28 @@ function changeSlide() {
 }
 
 // Title page
+const carouselInner = document.querySelector('.carousel-inner');
+members.forEach((member, i) => {
+  const carouselItem = document.createElement('div');
+  carouselItem.classList.add('carousel-item');
+  if (i === 0) {
+    carouselItem.classList.add('active');
+  }
+  const carouselImg = document.createElement('img');
+  carouselImg.classList.add('d-block');
+  carouselImg.classList.add('w-100');
+  carouselImg.src = member.image;
+
+  carouselItem.appendChild(carouselImg);
+  carouselInner.appendChild(carouselItem);
+});
+
 const startBtn = document.querySelector('.start_btn');
 startBtn.addEventListener('click', () => {
   changeSlide();
 });
 
 // Content page
-let members = [...enMembers];
 
 const title = document.querySelector('.title');
 const cards = document.querySelectorAll('.card');
