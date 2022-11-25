@@ -90,10 +90,7 @@ function next() {
         titleText = '4강';
         break;
       case 6:
-        titleText = '준결승!';
-        break;
-      case 7:
-        titleText = '결승';
+        titleText = '결승!';
         break;
     }
     title.textContent = titleText;
