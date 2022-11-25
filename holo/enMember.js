@@ -32,7 +32,7 @@ const enMembers = [
   {
     name: '세레스 파우나',
     image: 'images/en/fauna.png',
-    result: 'result/Fauna.html',
+    result: 'result/fauna.html',
     desc: '대자연의 수호자',
   },
   {
