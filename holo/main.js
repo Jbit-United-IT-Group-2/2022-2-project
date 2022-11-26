@@ -82,7 +82,7 @@ function next() {
     title.textContent = titleText;
   }
   count++;
-  progress.style.width = `${(count / 7) * 100}%`;
+  progress.style.width = `${(count / 7) * 15}rem`;
   if (count === 8) {
     location.href = temp[0].result;
     return;

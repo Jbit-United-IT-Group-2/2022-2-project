@@ -50,7 +50,14 @@ h3 {
   width: 100%;
 }
 
+.progress {
+  width: 15rem;
+}
+
 .card {
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
   background-color: #333;
   cursor: pointer;
   transition: 0.1s;
@@ -61,15 +68,21 @@ h3 {
   transform: scale(1.05);
 }
 .card-img-top {
+  object-fit: cover;
   border-radius: 1rem;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
 }
 .card-body {
   background-color: #222;
+  text-align: center;
 }
 
 .card-title {
+  font-size: 1.1rem;
   font-weight: bolder;
 }
 .card-text {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
