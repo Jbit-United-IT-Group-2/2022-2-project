@@ -44,7 +44,7 @@
     integrity="sha384-eKjgHJ9+vwU/FCSUG3nV1RKFolUXLsc6nLQ2R1tD0t4YFPCvRmkcF8saIfOZNWf/"
     crossorigin="anonymous"></script>
   <script>
-    Kakao.init('5b89a2845e0f5685d7a31f63343b8855'); // 사용하려는 앱의 JavaScript 키 입력
+    Kakao.init(process.env.KAKAO_KEY); 
     function shareMessage() {
       Kakao.Share.sendDefault({
         objectType: 'feed',
