@@ -24,3 +24,11 @@ h6 {
   box-shadow: 0 0 1rem 1rem #111 inset;
   margin-bottom: 1rem;
 }
+
+#kakaotalk-sharing-btn {
+  text-align: center;
+}
+
+#kakaotalk-sharing-btn img {
+  margin-bottom: 1rem;
+}

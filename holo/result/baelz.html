@@ -23,17 +23,59 @@
             <img class="img-fluid" src="../images/en/baelz.png" />
           </div>
           <h1>하코스 벨즈</h1>
+          <a href="https://www.youtube.com/channel/UCgmPnx-EEeOrZSg5Tiw7ZRQ">Youtube 채널</a>
           <h6>"But, to-ma-to's different!"</h6>
         </div>
-        <div>
-          <a href="https://www.youtube.com/channel/UCgmPnx-EEeOrZSg5Tiw7ZRQ">Youtube 채널 구독하러 가기</a>
-        </div>
+        <a id="kakaotalk-sharing-btn" href="javascript:shareMessage()">
+          <img
+            src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+            alt="카카오톡 공유 보내기 버튼" />
+          <h6>카카오톡 공유하기</h6>
+        </a>
         <a href="../">
           <button type="button" class="btn btn-outline-light start_btn">타이틀로</button>
         </a>
       </div>
     </div>
   </div>
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.1/kakao.min.js"
+    integrity="sha384-eKjgHJ9+vwU/FCSUG3nV1RKFolUXLsc6nLQ2R1tD0t4YFPCvRmkcF8saIfOZNWf/"
+    crossorigin="anonymous"></script>
+  <script>
+    Kakao.init('5b89a2845e0f5685d7a31f63343b8855'); // 사용하려는 앱의 JavaScript 키 입력
+    function shareMessage() {
+      Kakao.Share.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: '하코스 벨즈 - HOLOLIVE EN 이상형 월드컵!',
+          description: '당신의 최애 멤버는?',
+          imageUrl:
+            'https://github.com/Jbit-United-IT-Group-2/2022-2-project/blob/main/holo/images/en/baelz.png?raw=true',
+          link: {
+            // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
+            mobileWebUrl: 'https://jbit-united-it-group-2.github.io/2022-2-project/holo/result/baelz.html',
+            webUrl: 'https://jbit-united-it-group-2.github.io/2022-2-project/holo/result/baelz.html',
+          },
+        },
+        buttons: [
+          {
+            title: '결과 보기',
+            link: {
+              mobileWebUrl: 'https://jbit-united-it-group-2.github.io/2022-2-project/holo/result/baelz.html',
+              webUrl: 'https://jbit-united-it-group-2.github.io/2022-2-project/holo/result/baelz.html',
+            },
+          },
+          {
+            title: '테스트 하기',
+            link: {
+              mobileWebUrl: 'https://jbit-united-it-group-2.github.io/2022-2-project/holo/',
+              webUrl: 'https://jbit-united-it-group-2.github.io/2022-2-project/holo/',
+            },
+          },
+        ],
+      });
+    }
+  </script>
 </body>
 
 </html>
