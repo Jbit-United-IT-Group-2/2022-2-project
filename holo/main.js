@@ -1,6 +1,6 @@
-import enMembers from './enMember.js';
+import HLMembers from './HLMember.js';
 
-let members = [...enMembers].sort(() => Math.random() - 0.5);
+let members = [...HLMembers].sort(() => Math.random() - 0.5);
 
 const pages = document.querySelectorAll('.page');
 
@@ -67,27 +67,38 @@ cards[1].addEventListener('click', () => {
 });
 
 function next() {
-  if ([4, 6].includes(count)) {
+  if ([8, 12, 14].includes(count)) {
     members = [...temp];
     temp = [];
     let titleText;
     switch (count) {
-      case 4:
-        titleText = '4강';
+      case 8:
+        titleText = '8강';
+        progress.classList.remove('bg-success');
+        progress.classList.add('bg-info');
         break;
-      case 6:
+      case 12:
+        titleText = '4강';
+        progress.classList.remove('bg-info');
+        progress.classList.add('bg-warning');
+        break;
+      case 14:
         titleText = '결승!';
+        progress.classList.remove('bg-warning');
+        progress.classList.add('bg-danger');
         break;
     }
+    alert(`${titleText}!`);
     title.textContent = titleText;
   }
   count++;
-  progress.style.width = `${(count / 7) * 15}rem`;
-  if (count === 8) {
+  progress.style.width = `${(count / 15) * 15}rem`;
+  if (count === 16) {
     location.href = temp[0].result;
     return;
   }
-  console.log(members);
+  // console.log(members);
+  // console.log(count);
   member1 = members.pop();
   cardImgs[0].src = member1.image;
   cardTitles[0].textContent = member1.name;
