@@ -1,5 +1,5 @@
 .page {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -7,17 +7,16 @@
 
 .title-page {
   /* background-image: url(images/mainimage.webp); */
-  
-  background-size: contain;
+  background-image: url(images/mainback.png);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.mainimage{
-  background-image: url(images/mainback.png);
+.mainimage {
   width: 100vw;
   max-width: 420px;
-aspect-ratio: 1 / 1.5;
+  aspect-ratio: 1 / 1.5;
   position: absolute;
   z-index: 0;
 }
@@ -26,12 +25,14 @@ aspect-ratio: 1 / 1.5;
   font-family: 'IBM Plex Sans KR', sans-serif;
   line-height: 100px;
   text-align: center;
-  color: #EDA040;
+  color: #eda040;
   /* background-color: lightgray; */
   z-index: 10;
   /* font-weight : 150px; */
 }
 .start-btn {
+  color: white;
+  font-weight: bolder;
   width: 40%;
   z-index: 10;
   margin-top: 250px;
@@ -46,18 +47,18 @@ aspect-ratio: 1 / 1.5;
   height: 10rem;
 }
 
-.lastpage{
+.lastpage {
   background-image: url(images/lastpage.webp);
   background-size: cover;
 }
 
-.position{
+.position {
   width: 50px;
   height: 50px;
 }
 
-.lasttext{
+.lasttext {
   font-family: 'IBM Plex Sans KR', sans-serif;
-  color: #EDA040;
-  font-weight:bol;
+  color: #eda040;
+  font-weight: bol;
 }
