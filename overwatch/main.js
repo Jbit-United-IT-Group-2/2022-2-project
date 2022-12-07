@@ -2,6 +2,7 @@ import members from "./members.js";
 
 const pages = document.querySelectorAll(".page");
 const btns = document.querySelectorAll(".start-btn");
+const counts = document.querySelectorAll(".count1");
 
 
 
@@ -36,8 +37,11 @@ const updateCard = () => {
     temp = []
     alert(count)
   }
+  if(count == 16){
+    // counts.textContent = "16강";
+  }
   if(count === 31) {
-    location.href = 'result/ana.html'
+    location.href = temp[0].link
   }
   count = count + 1; 
   console.log(count)
