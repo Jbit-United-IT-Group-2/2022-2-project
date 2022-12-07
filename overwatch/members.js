@@ -37,7 +37,7 @@ const members = [
     name: "둠피스트",
     image:"images/cardimages/doomfist.png",
     result:"result/doomfist.html",
-    dialogue: "얼마 전 감금에서 벗어난 둠피스트는 이 세계를 새로운 갈등으로 몰아 넣고, 이를 통해 인류를 더욱 강하게 만들기로 결심했습니다. 둠피스트는 인공신체학으로 끌어올린 탁월한 기동성으로 최전선을 책임지는 강력한 투사로, 원거리에 피해를 주고, 적을 공중으로 띄우고, 대담하게 싸움에 뛰어들 수 있습니다."
+    dialogue: "주먹 한 방이면 된다."
   },
   {
     name: "디바",
@@ -55,7 +55,7 @@ const members = [
     name: "겐지",
     image:"images/cardimages/gengi.png",
     result:"result/gengi.html",
-    dialogue:"사이보그 시마다 겐지는 한때 거부했던 자신의 로봇 육체를 받아들였으며, 그 과정에서 한 차원 더 높은 인간성을 갖게 되었습니다."
+    dialogue:"복수를 꿈꾸는 자는 복수의 칼날에 쓰러진다."
   },
   {
     name: "한조",
