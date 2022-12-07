@@ -1,5 +1,10 @@
 import members from "./members.js";
 
+const pages = document.querySelectorAll(".page");
+const btns = document.querySelectorAll(".start-btn");
+
+
+
 let owMembers = [...members]
 let temp = []
 
@@ -17,6 +22,8 @@ const cardName2 = card2.querySelector('.card-title')
 
 const dialogue1 = card1.querySelector('.card-text')
 const dialogue2 = card2.querySelector('.card-text')
+
+
 
 let member1;
 let member2;
@@ -47,6 +54,20 @@ const updateCard = () => {
 
 updateCard();
 
+let currentPage = 0;
+for (let page of pages) {
+  page.classList.add("hide");
+}
+pages[currentPage].classList.remove("hide");
+
+for (let btn of btns) {
+  btn.addEventListener("click", function () {
+    pages[currentPage].classList.add("hide");
+    currentPage++;
+    pages[currentPage].classList.remove("hide");
+  });
+}
+
 card1.addEventListener('click',()=>{
   temp.push(member1);
   updateCard();
@@ -55,3 +76,4 @@ card2.addEventListener('click',()=>{
   temp.push(member2);
   updateCard();
 });
+

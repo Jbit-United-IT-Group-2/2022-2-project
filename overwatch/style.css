@@ -7,12 +7,14 @@
 
 .title-page {
   /* background-image: url(images/mainimage.webp); */
+  
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .mainimage{
+  background-image: url(images/mainback.png);
   width: 100vw;
   max-width: 420px;
 aspect-ratio: 1 / 1.5;
@@ -27,7 +29,7 @@ aspect-ratio: 1 / 1.5;
   color: #EDA040;
   /* background-color: lightgray; */
   z-index: 10;
-  font-weight : 10px;
+  /* font-weight : 150px; */
 }
 .start-btn {
   width: 40%;
@@ -42,4 +44,20 @@ aspect-ratio: 1 / 1.5;
 }
 .card img {
   height: 10rem;
+}
+
+.lastpage{
+  background-image: url(images/lastpage.webp);
+  background-size: cover;
+}
+
+.position{
+  width: 50px;
+  height: 50px;
+}
+
+.lasttext{
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  color: #EDA040;
+  font-weight:bol;
 }
