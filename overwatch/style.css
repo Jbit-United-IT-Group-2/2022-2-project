@@ -11,6 +11,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  justify-content: center;
 }
 
 .mainimage {
@@ -22,20 +23,27 @@
 }
 
 .title {
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  line-height: 100px;
   text-align: center;
-  color: #eda040;
-  /* background-color: lightgray; */
   z-index: 10;
-  /* font-weight : 150px; */
 }
+
+.logo-title {
+  margin-top: 10rem;
+  width: 80%;
+}
+.text-title {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-weight: bolder;
+  color: white;
+  /* color: #eda040; */
+}
+
 .start-btn {
   color: white;
   font-weight: bolder;
   width: 40%;
   z-index: 10;
-  margin-top: 250px;
+  margin-top: 8rem;
 }
 
 .card {
